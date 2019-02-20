@@ -16,6 +16,7 @@ extern crate bitcoin_hashes;
 extern crate rand;
 extern crate secp256k1;
 #[cfg(test)] extern crate hex;
+extern crate bolt;
 
 #[macro_use]
 pub mod util;
