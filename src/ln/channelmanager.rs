@@ -24,6 +24,7 @@ use secp256k1::key::{SecretKey,PublicKey};
 use secp256k1::Secp256k1;
 use secp256k1::ecdh::SharedSecret;
 use secp256k1;
+use bolt::bidirectional;
 
 use chain::chaininterface::{BroadcasterInterface,ChainListener,ChainWatchInterface,FeeEstimator};
 use chain::transaction::OutPoint;

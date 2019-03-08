@@ -22,14 +22,16 @@ max_level_info = []
 max_level_debug = []
 
 [dependencies]
-bitcoin = "0.17"
+#bitcoin = "0.17"
+bitcoin = { git = "https://github.com/boltlabs-inc/rust-bitcoin.git", branch = "zcash-bolt", features = ["bitcoinconsensus"] }
 bitcoin_hashes = "0.3"
 rand = "0.4"
 secp256k1 = "0.12"
+bolt = { git = "https://github.com/boltlabs-inc/libbolt.git", branch = "master" }
 
-[dev-dependencies.bitcoin]
-version = "0.17"
-features = ["bitcoinconsensus"]
+#[dev-dependencies.bitcoin]
+#version = "0.17"
+#features = ["bitcoinconsensus"]
 
 [dev-dependencies]
 hex = "0.3"
